@@ -1,0 +1,10 @@
+
+namespace Abrahamoff_M3_Program2_Inventory
+{
+    abstract class Item
+    {
+        public int count;
+        public float weight;
+     
+    }
+}
