@@ -1,0 +1,12 @@
+
+namespace Abrahamoff_M3_Program2_Inventory
+{
+    class Map : Item
+    {
+        public Map()
+        {
+            count = 1;
+            weight = 1.0f;
+        }
+    }
+}
