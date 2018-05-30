@@ -1,0 +1,13 @@
+
+namespace Abrahamoff_M3_Program2_Inventory
+{
+    class Sword : Item
+    {
+        public Sword()
+        {
+            count = 1;
+            weight = 9.5f;
+        }
+
+    }
+}
