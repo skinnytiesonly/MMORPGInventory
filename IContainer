@@ -1,0 +1,9 @@
+namespace Abrahamoff_M3_Program2_Inventory
+{
+    interface IContainer
+    {
+        void Add(Item item);
+        int TotalCount(int count);
+        float TotalWeight(int count);
+    }
+}
