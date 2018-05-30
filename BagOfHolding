@@ -1,0 +1,49 @@
+
+namespace Abrahamoff_M3_Program2_Inventory
+{
+    class BagOfHolding : Item, IContainer
+    {
+        List<Item> bag = new List<Item>();
+        //could throttle the ability to hold Items to a minimun amount like 4 items.
+        
+
+        public BagOfHolding ()
+        {
+            count = 1;
+            weight = 25.0f;
+            //could implement some function that will alter the weight of the bag based on the item weight within the bag
+        }
+
+        public void Add(Item item)
+        {
+            bag.Add(item);
+        }
+
+        public int TotalCount(int c)
+        {
+            if (c == bag.Count)
+            {
+                return 0;
+            }
+            else
+            {
+                return bag[c].count + TotalCount(c + 1);
+            }
+        }
+
+        public float TotalWeight(int c)
+        {
+            if (c == bag.Count)
+            {
+                return 0.0f;
+            }
+            else
+            {
+                return bag[c].weight + TotalWeight(c + 1);
+            }
+        }
+
+
+
+    }
+}
