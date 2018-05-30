@@ -1,0 +1,12 @@
+
+namespace Abrahamoff_M3_Program2_Inventory
+{
+    class Potion : Item
+    {
+        public Potion()
+        {
+            count = 1;
+            weight = 3.2f;
+        }
+    }
+}
