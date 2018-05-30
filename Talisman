@@ -1,0 +1,12 @@
+
+namespace Abrahamoff_M3_Program2_Inventory
+{
+    class Talisman : Item
+    {
+        public Talisman()
+        {
+            count = 1;
+            weight = 3.0f;
+        }
+    }
+}
