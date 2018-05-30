@@ -1,0 +1,13 @@
+
+namespace Abrahamoff_M3_Program2_Inventory
+{
+    class Cloak : Item
+    {
+        public Cloak()
+        {
+            count = 1;
+            weight = 15.6f;
+        }
+
+    }
+}
