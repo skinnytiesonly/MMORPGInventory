@@ -1,0 +1,34 @@
+
+namespace Abrahamoff_M3_Program2_Inventory
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var inventory = new Inventory();
+            var bagOfHolding = new BagOfHolding();
+
+            //Add to Inventory
+            inventory.Add(new Sword());
+            inventory.Add(new Potion());
+            inventory.Add(new Cloak());
+            inventory.Add(new Map());
+            inventory.Add(new Potion());
+
+            //Add to the bagOf Holding
+            inventory.Add(bagOfHolding);
+            bagOfHolding.Add(new Sword());
+            bagOfHolding.Add(new Talisman());
+            bagOfHolding.Add(new Talisman());
+
+
+            Console.WriteLine("The number of items in Inventory = {0}", inventory.TotalCount(0));//should be 6
+            Console.WriteLine("The total weight items in Inventory = {0}", inventory.TotalWeight(0));//should be 57.5
+
+            Console.WriteLine("The number of items in BagOfHolding = {0}", bagOfHolding.TotalCount(0));// shoudl be 3
+            Console.WriteLine("The total weight items in BagOfHolding = {0}", bagOfHolding.TotalWeight(0));// 15.5
+
+
+        }
+    }
+}
